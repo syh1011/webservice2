@@ -1,0 +1,32 @@
+<!-- 파일명 : step01.html -->
+<!-- 호출 URL : http://localhost/html/step01.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- 한글 지원(국제표준 : UTF-8, EUC-KR(X) ) -->
+    <meta charset="UTF-8">
+    <title>문서 제목</title>
+    <!-- html문서의 스타일 정의할 때 사용 -->
+    <style>
+        body {
+            background-color: yellow;
+            color : blue;
+        }
+    </style>
+    <!-- 스타일을 호출할 때 사용 -->
+    <link rel="stylesheet" href="style.css">
+     <!-- html문서의 자바스크립트를 정의할 때 사용 -->
+    <script>
+        document.addEventListener("click",function(){
+            alert('clicked');
+        });
+    </script>
+    <!-- 자바스크립트를 호출할 때 사용 -->
+    <script src="main.js"></script>
+</head>
+<body>
+    화면에 모든 컨텐츠는 이곳에 기술한다.
+     : <input>아이디
+    비밀번호 : <input type="password">
+</body>
+</html>

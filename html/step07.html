@@ -1,42 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         table {
-            border : 1px dotted black;
+            border : 1px solid black;
             border-collapse: collapse;   
         }
         td {
-            border : 1px dotted black; 
+            border : 1px solid black; 
         }
         th {
-            border : 1px dotted black; 
+            border : 1px solid black; 
         }
     </style>
     <title>table</title>
 </head>
 <body>
     <h1>표(table) 형식으로 정보 출력하기</h1>
-    <table>
+    <table summary="사회생활을 하면서 가장 친한 친구목록">
         <caption>친구 목록</caption>
+        <colgroup>
+            <col width="200px"/>
+            <col width="500px"/>
+            <col width="300px"/>
+        </colgroup>
         <thead>
-            <th>번호</th>
-            <th>이름</th>
-            <th>국적</th>
+            <tr>
+                <!--
+                    th : 중앙정렬, 굵은글씨 
+                -->
+                <th>번호</th>
+                <th>이름</th>
+                <th>국적</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>스티브</td>
-                <td>미국</td>
+                <td rowspan="2">미국</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>빌게이츠</td>
-                <td>미국</td>
+                
             </tr>
             <tr>
                 <td>3</td>
@@ -44,11 +54,23 @@
                 <td>일본</td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>비탈릭</td>
+                <td colspan="2">4</td>
                 <td>캐나다,러시아</td>
             </tr>
         </tbody>
+    </table>
+
+    <table width="100%">
+        <tr>
+            <td colspan="2">header</td>
+        </tr>
+        <tr>
+            <td>main</td>
+            <td>aside</td>
+        </tr>
+        <tr>
+            <td colspan="2">footer</td>
+        </tr>
     </table>
 </body>
 </html>

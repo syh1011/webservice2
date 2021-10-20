@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyper link</title>
+</head>
+<body>
+    <h1>
+        a 요소는 하이퍼링크, 책갈피, 메일, 자바스크립트를 
+        수행할 수 있다.
+    </h1>
+    <h2>상태경로</h2>
+    <!--
+        ../-> 상위디렉토리
+        ./ -> 현재디렉토리
+        X  -> 현재디렉토리
+    -->
+    <a href="../index.html">메인</a>
+    <a href="step01.html">step01.html</a>
+    <a href="./step02.html">step02.html</a>
+    <a href="aa/test.html">test.html</a>
+
+    <h2>다른 웹의 절대경로 이동</h2>
+    <a href="https://www.naver.com/">네이버</a>
+    <a href="https://www.daum.net/">다음</a>
+
+    <h2>같은 웹의 절대경로 이동</h2>
+    <!--
+        / => 최상의 디렉토리(루트 디렉토리)
+    -->
+    <a href="/index.html">메인1</a>
+    <a href="http://localhost/index.html">메인2</a>
+
+    <h2>메일 보내기</h2>
+    <a href="mailto:syh@hbilab.org">메일보내기</a>
+
+    <h2>전화 걸기</h2>
+    <a href="tel:01030241703">전화걸기</a>
+
+    <h2>자바스크립트 호출</h2>
+    <a href="javascript:alert('안녕하세요');">
+        자바스크립트 호출</a>
+    
+</body>
+</html>

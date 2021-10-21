@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+        .container {
+            background-color: tomato;
+        }
+        */
+        
+        /* .container의 자손 중에서 p요소 선택 */
+        /*
+        .container p {
+            background-color: wheat;
+        }
+        */
+        /* .container의 자식 중에서 p요소 선택 */
+        /*
+        .container > p {
+            background-color: wheat;
+        }
+        */
+        /*.container의 형제중에 바로 인전한 p요소 선택 */
+        /*
+        .container + p {
+            background-color: wheat;
+        }
+        */
+        /*.container의 형제중에 모든 p요소 선택 */
+        /*
+        .container ~ p {
+            background-color: wheat;
+        }
+        */
+        /*
+        .container div  p {
+            background-color: wheat;
+        }
+        */
+        /*
+        .container div  p {
+            background-color: wheat;
+        }
+
+        #myP {
+            background-color: wheat;
+        }
+        */
+        /*
+        .container .classP {
+            background-color: wheat;
+        }
+        */
+
+    </style>
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>CSS Selector</title>
+</head>
+<body>
+    <p>1.Lorem ipsum dolor sit amet.</p>
+    <div class="container">
+        <p>2.Lorem ipsum dolor sit amet.</p>
+        <div>
+            <p class="classP" id="myP">3.Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>4.Lorem ipsum dolor sit amet.</p>
+        
+    </div>
+
+    <p class="classP">5.Lorem ipsum dolor sit amet.</p>
+    <p>6.Lorem ipsum dolor sit amet.</p>
+    <p>7.Lorem ipsum dolor sit amet.</p>
+    <p>8.Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

@@ -14,20 +14,20 @@
             height : 500px;
             background-color: antiquewhite;
         }
-        #first {
+        .first {
             position : relative;
             top : 100px;
             left : 20px;
         }
 
-        #second {
+        .second {
             position : absolute;
             top : 100px;
             left : 20px;
         }
 
 
-        #third {
+        .third {
             /*viewport 위치의 좌표로 고정된다.*/
             position : fixed;
             bottom : 100px;
@@ -38,10 +38,10 @@
 </head>
 <body>
     <div class="box">static</div>
-    <div class="box" id="first">relative</div>
+    <div class="box first">relative</div>
     <div class="spacer"></div>
-    <div class="box" id="second">absolute</div>
+    <div class="box second">absolute</div>
     <div class="spacer"></div>
-    <div class="box" id="third">fixed</div>
+    <div class="box third">fixed</div>
 </body>
 </html>

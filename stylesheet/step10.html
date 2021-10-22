@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box {
+            width : 100px;
+            height : 100px;
+            border : 1px solid black;
+        }
+        .spacer {
+            height : 500px;
+            background-color: antiquewhite;
+        }
+        #first {
+            position : relative;
+            top : 100px;
+            left : 20px;
+        }
+
+        #second {
+            position : absolute;
+            top : 100px;
+            left : 20px;
+        }
+
+
+        #third {
+            /*viewport 위치의 좌표로 고정된다.*/
+            position : fixed;
+            bottom : 100px;
+            right : 100px;
+        }
+    </style>
+    <title>Relative, Absolute, Fixed</title>
+</head>
+<body>
+    <div class="box">static</div>
+    <div class="box" id="first">relative</div>
+    <div class="spacer"></div>
+    <div class="box" id="second">absolute</div>
+    <div class="spacer"></div>
+    <div class="box" id="third">fixed</div>
+</body>
+</html>

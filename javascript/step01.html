@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // single line comment 
+        /*
+            multi line comment
+
+        */
+        
+        /*
+            변수(식별자) 작성규칙
+
+            1. 첫글자는 문자(한글, 영문)를 사용해야 한다.
+            2. 특수기호 중에서는 $, _ 만 사용해야 한다.
+            3. 첫글자에는 숫자를 사용할 수 없지만 그이외에 
+               서는 사용가능 하다.
+            4. 대소문자를 구분한다.
+            5. 변수에는 공백을 허용하지 않는다.
+            6. 키워드 사용할 수 없지만, 예약어는 사용할 수 
+               있다.(예약어는 될수 있으면 사용하지 않는다.) 
+
+        */
+        var test = 10;
+        var 변수 = 20;
+        var _test = 30;
+        var $test = 40;
+
+        //Uncaught SyntaxError: Invalid or unexpected token
+        //var @test = 50; //에러 발생 -> 특수기호중에서는
+                        //$, _이외에는 사용할 수 없음.
+        //var 1test = 50;//첫글자는 숫자를 사용할 수 없음.
+        var test1 = 50;
+        var Test1 = 60;//변수는 대소문자를 구분하기때문에
+                       //test1과는 다른 변수로 인식
+
+        //Uncaught SyntaxError: Unexpected identifier
+        //var test age = 10;//변수에 공백을 허용하지 않음
+
+        //Uncaught SyntaxError: Unexpected token 'break'
+        //var break = 70;//키워드는 변수로 사용할 수 없음.
+
+        var boolean = 80;//예약어는 변수로 사용할 수 있으나
+                        //사용하지 않는것이 바람직함.
+
+        console.log(test);
+        console.log(변수);
+        console.log(_test);
+        console.log($test);
+        console.log(test1);//50
+        console.log(Test1);//60
+
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

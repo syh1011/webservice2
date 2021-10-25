@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+       
+        //숫자를 선언하는 방법.
+        var num1 = 100;
+        var num1 = 200;//var로 선언된 변수는 이중선언 가능
+        console.log(num1);//200
+
+        //문자열을 선언하는 방법
+        //자바스립트의 문자열은 "", '' 모두 가능함.
+        var myName = '성영한';
+        var yourName = "손정의";
+
+        console.log(myName);
+        console.log(yourName);
+
+        console.log(campusName);//undefined -> 변수의 호이스팅
+        var campusName = '에이콘 종로센터';
+        console.log(campusName);
+
+        foo();
+        function foo(){ //함수 호이스팅 발생
+            alert('안녕하세요');
+        }
+
+        
+        
+    </script>
+    <title>var(변수선언), literal(값)</title>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li {
+            background-color: yellow; /* 1점 */
+        }
+        ul li {
+            background-color: green; /* 2점 */
+        }
+        .active {
+            background-color: pink; /* 10점 */
+        }
+        #first {
+            background-color: blue; /* 100점 */
+        }
+        #first {
+            background-color: brown !important;/* 10100점 */
+        }
+    </style>
+    <title>css 선택자 우선순위</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <ul>
+                <!-- 인라인 CSS의 가중치 점수 : 1000점 -->
+                <li class="active" id="first" 
+                style="background-color: coral !important;">하나</li>
+                <!-- 인라인 CSS의 가중치 점수(!important) : 11000점 -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

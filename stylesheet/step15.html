@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            position : absolute;
+            width : 100px;
+            border : 1 solid black;
+        }
+        .first {
+            left : 100px;
+            top : 100px;
+            z-index : 10000;
+        }
+        .second {
+            left : 130px;
+            top : 130px;
+            z-index : 1000;
+        }
+        .third {
+            left : 170px;
+            top : 170px;
+            z-index : 100;
+        }
+    </style>
+    <title>z-index</title>
+</head>
+<body>
+    <img class="first" src="../css/1.jpg">
+    <img class="second" src="../css/2.jpg">
+    <img class="third" src="../css/4.jpg">
+</body>
+</html>

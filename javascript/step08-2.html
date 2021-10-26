@@ -4,6 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        //반복문 : for , while
+        /*
+            for(초기화 변수(1) ; 조건식(2) ; 증감식(4)){
+                실행문(3);
+                ....
+            }
+            -> 실행순서 : 1->2(true)->3->4->2(true)->3
+                         ->4->2(false)->for문 종료
+            -> for문 종료하는 방법 : 1. 조건식 false
+                                    2. break
+        */
+        //2단을 for문
+        for(let i = 1;i <= 9;i++){
+            console.log(2 + "*" + i + "=" +(2*i));
+        }
+
+        //1부터 100까지 합 -> for문 사용
+        let sum = 0;
+        for(let i=1;i<=100;i++){
+            sum = sum + i;
+        }
+        console.log('1부터 100까지 합은 '+sum+' 입니다.');
+        console.log(`1부터 100까지 합은 ${sum} 입니다.`)
+
+        //1부터 100까지 짝수 합 -> for문 사용
+        sum = 0;
+        for(let i=1;i<=100;i++){
+            if(i%2==0){//짝수일 경우
+                sum = sum + i;
+            }
+        }
+        console.log(`1부터 100까지의 짝수 합은 ${sum} 입니다.`)
+
+        /*
+          초기화 변수;
+          while(조건식){
+              실행문;
+              증감식;
+          }  
+        */
+
+        let sum1 = 0;
+        let i = 0;
+        while(i<=100){
+            sum1 = sum1 + i;
+            i++;
+        }
+        console.log(`1부터 100까지의 합은 ${sum1} 입니다.`)
+
+
+
+    </script>
     <title>제어문(반복문-for, while)</title>
 </head>
 <body>

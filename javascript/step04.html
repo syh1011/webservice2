@@ -15,13 +15,42 @@
         //2 string type
         let myName = '성영한';
         let yourName = "손정의";
-        let hisName = `스티브 잡스`; //es6추가된 템플릿 문자열
+        let hisName = `스티브 잡스`;//백틱 //es6추가된 템플릿 문자열
         console.log(typeof hisName);
 
         //3 boolean type
         let isRun = true;
         let igGreater = 10 > 5;
         console.log(typeof igGreater);
+
+        //4. undefined type
+        let a;
+        let b = undefined;
+        let c = a+1;
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(c);//NaN
+
+        //5. null type -> object
+        let d = null;
+        console.log(typeof d);
+        let e = d + 1;
+        console.log(e);//1
+
+        //6. array type
+        const names = ['손정의','성영한','잡스'];
+        console.log(typeof names);//object
+
+        //7. object type
+        const obj = {num : 1, name : '성영한', id : 'syh1011'};
+        console.log(typeof obj);//object
+
+        //8. function type
+        function sum(){
+            alert('sum 함수 입니다.');
+        }
+        sum();
+        console.log(typeof sum);//function
 
 
     </script>

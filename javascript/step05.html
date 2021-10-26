@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        //number type은 산술연산(+,-,*,/,%)이 가능함
+        let num1 = 10;
+        let num2 = 23;
+        let result = num1 + num2;
+        console.log(result);
+        console.log(typeof result);
+        
+        let str1 = "1234";
+        let num3 = 2000;
+        // + -> 산술 연산자 : number + number
+        // + -> 연결 연산자 : string + number, 
+        //                   number+ string, string + string
+        let result2 = str1 + num3;
+        console.log(result2);
+        console.log(typeof result2);
+
+        //문자열을 숫자로 변환해주는 함수 : parseInt, parseFloat
+        let result3 = parseInt(str1) + num3;
+        console.log(result3);
+        console.log(parseFloat("123.45"));
+        console.log(parseInt("123.34"));//소숫점이하 절삭
+        console.log(parseInt("abc"));//NaN
+        console.log(12/0);//Infinity
+        console.log(0/0);//NaN
+        console.log(0/12);//0
+
+        let a = "123.45";
+        let b = "234.56";
+        let c = parseFloat(a) + parseFloat(b);
+        console.log(c);
+
+        let d = (+a) + (+b);
+        console.log(d);
+        
+        // undefined + number => NaN
+        let e;
+        let f = e + 1;
+        console.log(f);//NaN -> Not a Number
+
+        // null + number => number
+        let g = null;
+        let h = 20;
+        let i = g + h;
+        console.log(i);
+
+        
+
+
+
+    </script>
+    <title>number type</title>
+</head>
+<body>
+    
+</body>
+</html>

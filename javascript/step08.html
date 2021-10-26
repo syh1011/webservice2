@@ -45,10 +45,30 @@
         //방 뒤에 값을 넣을 때 사용
         nums1.push(600);
 
-        //배열 출력
+        //1. 배열 출력 - for loop
         for(let i = 0; i<nums1.length; i++){
             console.log(nums1[i]);
         }
+
+        console.log('----for in----');
+        //2. 배열 출력 - for in(es6)
+        for(let index in nums1){
+            console.log(nums1[index]);
+        }
+        
+        console.log('----for of----');
+        //3. 배열 출력 - for of(es6)
+        for(let value of nums1){
+            console.log(value);
+        }
+
+        console.log('----forEach----');
+        //4. 배열 출력 - forEach(es5)
+        nums1.forEach(function(value, index){
+            console.log(value+","+index);
+        });
+
+
 
         //배열의 구성요소를 문자열로 바꾸는 방법
         //join('') -> 배열의 구분문자열을 ''으로 대채해서 

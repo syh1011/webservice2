@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        //선언적 함수 = function hoisting 발생
+        test1();
+        function test1(){
+            console.log('test1 function');
+        }
+      
+        
+        //함수식 - function hoisting 발생하지 않음
+        const test2 = function(){
+                //이름이 없는 함수를 무명함수라 함
+            console.log('test2 function');
+        }
+        test2();
+
+        //test2의 참조값을 test3로 할당
+        const test3 = test2;
+        test3();
+
+        console.log(typeof test1);
+
+        const plus = function(first, second){
+            return first + second;
+        }
+
+        let sum = plus(10,20,30,40,50);
+        console.log(sum);
+
+        const getSum = function(){
+            //console.log(arguments);
+            let sum = 0;
+            for(let value of arguments){
+                sum = sum + value;
+            }
+            return sum;
+            
+        }
+
+        let result0 = getSum(10,20);
+        let result1 = getSum(10,20,30);
+        let result2 = getSum(10,20,30,40);
+        console.log(result0);
+        console.log(result1);
+        console.log(result2);
+    </script>
+    <title>함수</title>
+</head>
+<body>
+    
+</body>
+</html>

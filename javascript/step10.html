@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const mem = {
+            name : "성영한",
+            address : "서울",
+            "blood-type" : "O형",
+            "gender" : "male",
+            "age" : 20
+        }
+        //object를 접근하는 방법은 . 을 이용하여 key로 접근
+        //하면 된다. 다만 key값이 식별자 규칙을 지키지 않았
+        //다면 []로 접근한다.
+        console.log(mem.name);
+        console.log(mem.address);
+        console.log(mem["blood-type"]);
+        console.log(mem.gender);
+        console.log(mem.age);
+
+        delete mem.age;//특정키로 삭제 가능함.
+        console.log(mem.age);
+
+        const club = {
+            "squadName": "Super hero squad",
+            "homeTown": "Metro City",
+            "formed": 2016,
+            "secretBase": "Super tower",
+            "active": true,
+            "members": [
+                {
+                "name": "Molecule Man",
+                "age": 29,
+                "secretIdentity": "Dan Jukes",
+                "powers": [
+                    "Radiation resistance",
+                    "Turning tiny",
+                    "Radiation blast"
+                ]
+                },
+                {
+                "name": "Madame Uppercut",
+                "age": 39,
+                "secretIdentity": "Jane Wilson",
+                "powers": [
+                    "Million tonne punch",
+                    "Damage resistance",
+                    "Superhuman reflexes"
+                ]
+                },
+                {
+                "name": "Eternal Flame",
+                "age": 1000000,
+                "secretIdentity": "Unknown",
+                "powers": [
+                    "Immortality",
+                    "Heat Immunity",
+                    "Inferno",
+                    "Teleportation",
+                    "Interdimensional travel"
+                ]
+                }
+            ]
+        };
+
+        let sname = club.squadName;
+        let homeTown = club.homeTown;
+        let formed = club.formed;
+        let sBase = club.secretBase;
+        let active = club.active;
+
+        console.log(sname);
+        console.log(homeTown);
+        console.log(formed);
+        console.log(sBase);
+        console.log(active);
+
+        const membersArray = club.members;
+
+        for(const memberObj of membersArray){
+            let name = memberObj.name;
+            let age = memberObj.age;
+            let secretIdentity = memberObj.secretIdentity;
+            console.log(name);
+            console.log(age);
+            console.log(secretIdentity);
+        }
+
+        
+
+
+
+    </script>
+    <title>object</title>
+</head>
+<body>
+    
+</body>
+</html>

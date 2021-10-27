@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let inputValue = prompt(
+            "주민번호를 입력하세요",
+            "111111-1111118");
+        if(inputValue != null){
+            let a1 = +inputValue.charAt(0);
+            let a2 = +inputValue.charAt(1);
+            let a3 = +inputValue.charAt(2);
+            let a4 = +inputValue.charAt(3);
+            let a5 = +inputValue.charAt(4);
+            let a6 = +inputValue.charAt(5);
+
+            let b1 = +inputValue.charAt(7);
+            let b2 = +inputValue.charAt(8);
+            let b3 = +inputValue.charAt(9);
+            let b4 = +inputValue.charAt(10);
+            let b5 = +inputValue.charAt(11);
+            let b6 = +inputValue.charAt(12);
+            let b7 = +inputValue.charAt(13);
+
+            let sum = a1*2 + a2*3 + a3*4 + a4*5 + a5*6 +
+                a6*7 + b1*8 + b2*9 + b3*2 + b4*3 +
+                b5*4 + b6*5;//58
+
+            let rest = sum % 11;//3
+            rest = 11 - rest;//8 , rest가 10, 11일 경우
+                             //주민번호 맨끝자리와 비교할 수
+                             //없음.
+            rest = rest % 10;
+
+            if(b7 == rest){
+                alert('정상적인 주민번호 입니다.');
+            }else{
+                alert("비 정상적인 주민번호 입니다.");
+            }
+        }else{
+            alert('입력을 취소 하셨습니다.');
+        }
+       
+    </script>
+    <title>주민번호 체크</title>
+</head>
+<body>
+    
+</body>
+</html>

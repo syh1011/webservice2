@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DOM(Document Objec Model)</title>
+</head>
+<body>
+    <h1 class="test">안녕하세요.</h1>
+</body>
+<script>
+    /*
+    const h1 = document.createElement("h1");
+    const textNode = document.createTextNode(
+        "안녕하세요.");
+    h1.appendChild(textNode);
+    document.body.append(h1);
+    */
+    //document.body.innerHTML = '<h1>안녕하세요</h1>';
+    //const h1 = document.getElementById("test");
+    const h1 = document.querySelector(".test");
+    h1.style.backgroundColor = "yellow";
+    h1.style.color = "red";
+    h1.style.margin = '100px';
+    h1.style.border = '1px solid black';
+    h1.innerHTML = 'Hello';
+    //h1.remove();
+</script>
+</html>

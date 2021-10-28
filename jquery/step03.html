@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            //$('li').eq(0).addClass('s');
+			//$('li').first().addClass('s');
+			//$('li').last().addClass('s');
+			//$('li').not(':even').addClass('s');
+			/*
+			$('li').each(function(index,value){
+				console.log(index , $(value).text());
+				$(value).text('li'+index);
+			});
+			*/
+			/*
+			$('li').each(function(index){
+				console.log(index , $(this).text());
+				$(this).text('li'+index);
+			});
+			*/ 
+
+			//$('#root').children().addClass('s');
+			//$('#root > div').addClass('s');
+			//closest() : 현재 엘리먼트를 포함해서 가장 
+			//가까운 부모 엘리먼트를 찾는다.
+			$('li').closest('div').addClass('s');
+
+        });
+    </script>
+    <style type="text/css">
+		
+		#panel div, #panel ul, #panel li , #header{
+			border : 2px solid rgb(48, 31, 31);
+			margin : 10px;
+			padding : 10px;
+		}
+		#message { 
+		width:98%;
+  		height:auto;
+  		font-size:20px;
+		
+		padding: 14px 10px; 
+		border: 1px solid #999; 
+		
+		}
+
+
+		#panel ul{
+			list-style : none;
+		}
+		
+		#panel .s{
+			border : 2px solid red;
+			background-color : yellow;
+		}
+		.remov{
+			border : 2px solid black;
+			background-color : white;
+		}
+	</style>
+    <title>jquery traversing</title>
+</head>
+<body>
+    
+	<div id="panel">
+		<div id="root">
+			div id="root""
+			<div id="first">
+				div id="first"
+			</div>
+			<div>
+				div
+				<ul>
+					ul
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+				</ul>
+				<div class="third">div class="third"</div>
+			</div>
+			<div class="third">div</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

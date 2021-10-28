@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            //element selector
+            //$('div').addClass('s');
+
+            //class selector
+            //$('.third').addClass('s');
+
+            //id selector
+            //$('#first').addClass('s');
+
+            //child selector
+            //$('#root > div').addClass('s');
+
+            //descendant selector
+            //$("#root div").addClass('s');
+
+            //pseudo selector
+            //$('li:nth(2)').addClass('s');
+            //$('li:even').addClass('s');
+            //$('li:odd').addClass('s');
+            //$('li:gt(2)').addClass('s');
+            $('li:lt(3)').addClass('s');
+
+        });
+    </script>
+    <style type="text/css">
+		
+		#panel div, #panel ul, #panel li , #header{
+			border : 2px solid rgb(48, 31, 31);
+			margin : 10px;
+			padding : 10px;
+		}
+		#message { 
+		width:98%;
+  		height:auto;
+  		font-size:20px;
+		
+		padding: 14px 10px; 
+		border: 1px solid #999; 
+		
+		}
+
+
+		#panel ul{
+			list-style : none;
+		}
+		
+		#panel .s{
+			border : 2px solid red;
+			background-color : yellow;
+		}
+		.remov{
+			border : 2px solid black;
+			background-color : white;
+		}
+	</style>
+    <title>jquery selector</title>
+</head>
+<body>
+    
+	<div id="panel">
+		<div id="root">
+			div id="root""
+			<div id="first">
+				div id="first"
+			</div>
+			<div>
+				div
+				<ul>
+					ul
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+					<li>li</li>
+				</ul>
+				<div class="third">div class="third"</div>
+			</div>
+			<div class="third">div</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

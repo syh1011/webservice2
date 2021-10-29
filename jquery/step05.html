@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            let count = 0;
+            //$('#sendBtn').click(function(){});
+            //$('#sendBtn').on('click',function(){});
+            $('#sendBtn').bind('click',function(){
+                count++;
+                $('#cartCount').text(count);
+            });
+        });
+    </script>
+    <style>
+        h1 span {
+            display : inline-block;
+            font-size: 20px;
+            background-color:salmon;
+            width : 26px;
+            color : seashell;
+            text-align: center;
+            border-radius: 30px;
+        }
+    </style>
+    <title>jquery event</title>
+</head>
+<body>
+    <h1>장바구니<span id="cartCount">0</span></h1>
+    <button id="sendBtn">장바구니</button>
+</body>
+</html>

@@ -28,9 +28,19 @@
 			//$('#root > div').addClass('s');
 			//closest() : 현재 엘리먼트를 포함해서 가장 
 			//가까운 부모 엘리먼트를 찾는다.
-			$('li').closest('div').addClass('s');
+			//$('li').closest('div').addClass('s');
 
-        });
+			//$('#root').find('li').addClass('s');
+			//$('#root').find('li').first().next().addClass('s');
+			//$('#root').find('li').first().nextAll().addClass('s');
+
+			//$('li').eq(2).prev().addClass('s');
+			//$('li').eq(2).prevAll().addClass('s');
+
+			//$('li').parent().addClass('s');
+			//$('li').parents().addClass('s');
+			$('li').eq(2).siblings().addClass('s');
+		});
     </script>
     <style type="text/css">
 		

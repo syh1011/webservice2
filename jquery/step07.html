@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('#btn2').hide();
+            $('#btn1').bind('click',function(){
+                //$('#target').fadeOut();
+                //$('#target').hide(); 
+                $('#target').slideUp(2000,function(){
+                    $('#btn1').hide(); 
+                    $('#btn2').show(); 
+                });
+            });
+            $('#btn2').bind('click',function(){
+                //$('#target').fadeIn(); 
+                //$('#target').show();
+                $('#target').slideDown(2000,function(){
+                    $('#btn1').show(); 
+                    $('#btn2').hide(); 
+                });
+            });
+        });
+        
+    </script>
+    <style>
+        div {
+            width : 300px;
+            height : 300px;
+            background-color: burlywood;
+        }
+    </style>
+    <title>jquery effect</title>
+</head>
+<body>
+    <input type="button" id="btn1" value="효과1">
+    <input type="button" id="btn2" value="효과2">
+    <div id="target">
+        <p>sdlkfalskdfasd
+        klajsdlfja;sdfj
+        klja;lsdjflajsdf
+        klja;sdjflajsd;f;asd</p>
+    </div>
+</body>
+</html>
